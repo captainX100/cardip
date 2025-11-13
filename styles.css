@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: rgb(10, 48, 81);
+}
+
+
+header img {
+  width: 90px;
+  height: auto;
+  margin-left: 20px;  /* تبعده عن الحافة اليسار */
+}
+
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+
+}
+.navigation a {
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+
+.navigation a:hover {
+    color:rgb(14, 128, 14);
+}
+hr{
+    opacity: 10%;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    
+}
+
+
+.heroSub {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+
+}
+/* الكود الذي يجب لصقه في الجزء العلوي من styles.css */
+
+.arrow {
+    /* لإظهار صورة Welcome to CARDIP وتناسبها مع الشاشة بعد التعديل في HTML */
+    width: 100%; /* العرض داخل HeroSub */
+    max-width: 300px; /* أقصى حجم */
+    height: auto;
+    margin-bottom: 1rem; 
+}
+
+.HeroImg {
+  /* تنسيق الصورة الرئيسية الآن متجاوب */
+  width: 45%; 
+  max-width: 400px; 
+  height: auto;
+  margin-left: 50px; 
+}
+
+.heroSub {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+width: 50%; /* لتحديد عرض قسم النصوص */
+align-items: flex-start; /* تبدأ العناصر من اليسار */
+}
+
+/* تعديل قسم AboutMe */
+.aboutMe {
+    display: flex; /* تأكد من وجود هذه الخاصية لتفعل Flexbox */
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5rem auto; 
+    max-width: 1200px; 
+    padding: 0 20px; 
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem; 
+}
+
+
+
+
+
+
+.name{
+font-size: 3rem;
+color: aliceblue;
+}
+
+.title {
+font-size: 3rem;
+color: rgb(255, 255, 255);
+}
+
+.HeroBtns {
+display: flex;
+gap: 1rem;
+margin-top: 1.5rem;
+}
+
+.hireMe {
+background-color: cadetblue;
+color: aliceblue;
+border-radius: 24px;
+text-decoration: none;
+padding: 0.5rem 1.5rem;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.aboutMe {
+/* ... خصائص أخرى */
+margin-top: 5rem;
+margin-bottom: 5rem;
+margin-left: 50px; /* مسافة من اليسار */
+margin-right: auto; /* لدفع الحاوية بالكامل لليسار */
+/* ... خصائص أخرى */
+}
+
+
+
+.textContainer {
+display: flex;
+flex-direction: column;
+padding-top: 20rem; /* إضافة مسافة من الأعلى */
+}
+
+.textTitle {
+display: flex;
+align-items: center;
+gap: 5px;
+font-size: 2rem;
+}
+
+.aboutName {
+color: aliceblue;
+}
+
+.aboutTitle{
+color: rgb(19, 191, 197);
+
+}
+
+.aboutMePar  {
+text-align: justify;
+color: rgba(255, 255, 255, 0.75);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.contact h3, .contact a {
+color: aliceblue;
+text-decoration: none;
+}
+
+
+
+/* --- أنماط قسم التواصل الجديد (Footer) لتتناسب مع الصورة --- */
+
+.contactFooter {
+    background-color: #1a1e28; /* لون داكن للخلفية */
+    color: white;
+    text-align: center;
+    padding: 3rem 0 1rem 0; 
+    margin-top: 5rem; 
+    /* ملاحظة: إذا كان لديك صورة لنمط الخلفية المشخبطة في الصورة، أزل التعليق عن الأسطر التالية وقم بتحديث المسار */
+    /* background-image: url('assets/doodle-pattern.png'); */ 
+    /* background-size: 500px; */
+}
+
+.contactFooterTitle {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    display: inline-block; 
+}
+
+/* لتلوين كلمة "Us" بلون مختلف */
+.contactFooterTitle {
+    content: "Us";
+    color: rgb(255, 255, 255); /* اللون الفيروزي الذي استخدمته */
+    margin-left: 5px;
+}
+
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; 
+    margin-bottom: 2rem;
+    flex-wrap: wrap; 
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactItem a, .contactItem span {
+    color: #f0f8ff; 
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contactIcon {
+    width: 20px; 
+    height: 20px;
+    /* لجعل الأيقونات بيضاء على الخلفية الداكنة */
+    filter: invert(100%); 
+}
+
+.socialMediaFooter {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem; 
+}
+
+.socialIcon {
+    width: 45px; /* زيادة بسيطة في العرض */
+    height: 45px; /* زيادة بسيطة في الارتفاع */
+    padding: 5px; /* تقليل البادينج */
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    filter: invert(100%); 
+    transition: background-color 0.3s;
+}
+
+.socialIcon:hover {
+    background-color: rgba(19, 191, 197, 0.5); 
+}
+
+.builtBy {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+/* --- أنماط قسم التواصل الجديد (Footer) (التعديلات على Social Media) --- */
+
+/* تعديل العنوان ليتطابق مع الصورة (مع إزالة ::after) */
+.contactFooterTitle {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    /* إزالة display: inline-block; لم يعد ضرورياً */
+}
+
+
+.socialMediaFooter {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem; 
+}
+
+/* تنسيق الحاوية لكل أيقونة (بما أننا أبقينا على واحدة فقط) */
+.socialMediaFooter a {
+    display: flex;
+    flex-direction: column; /* لترتيب الأيقونة والنص تحت بعض */
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7); /* لون النص */
+    font-size: 0.9rem;
+    gap: 5px;
+}
+
+.socialIcon {
+    width: 40px; 
+    height: 40px;
+    padding: 8px; 
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    filter: invert(100%); 
+    transition: background-color 0.3s;
+}
+
+.socialIcon:hover {
+    background-color: rgba(19, 191, 197, 0.5); 
+}
+
+.builtBy {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* يجب استبدال الكود داخل هذا الجزء بالكامل */
+@media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column; /* جعل الترتيب عمودي على الموبايل */
+    align-items: center;
+    gap: 2rem;
+    padding: 0 10px; 
+  }
+  
+  /* تعديل أحجام العناصر داخل Hero ليناسب الشاشة الصغيرة */
+  .HeroImg {
+    width: 80%; 
+    max-width: 400px;
+    margin-left: 0; 
+  }
+  .heroSub {
+    width: 100%; /* النصوص تأخذ عرض الشاشة بالكامل */
+    text-align: center; 
+    align-items: center; /* توسيط محتوى النصوص في المنتصف */
+  }
+  .HeroBtns {
+    justify-content: center; 
+  }
+
+  /* تنسيقات الخطوط على الشاشات الصغيرة */
+  .name, .title {
+    font-size: 2.5rem; 
+  }
+  .arrow {
+    width: 80%; 
+    max-width: 300px;
+  }
+
+  /* تنسيق قسم AboutMe على الموبايل */
+  .aboutMe {
+    flex-direction: column-reverse; /* الصورة/العنصر في الأسفل، النص في الأعلى */
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 2rem; 
+    gap: 1rem;
+    padding-top: 2rem; 
+  }
+  .aboutMePar {
+    text-align: center; 
+  }
+
+  .aboutName, .aboutTitle {
+    font-size: 2rem;
+  }
+  
+  /* أضف باقي تنسيقاتك الخاصة بالأجهزة الصغيرة هنا إذا كانت لديك */
+}
+
+
+
+
+
+
+
+/* ======================================================= */
+/* 1. التخطيط العام لقسم Hero (لابتوب) */
+/* ======================================================= */
+
+.hero {
+    display: flex;
+    justify-content: space-around; /* توزيع متساوٍ للمسافات بين العناصر */
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1400px; /* زيادة العرض ليتسع بشكل جمالي */
+    gap: 4rem; /* مسافة واضحة بين النص والصورة */
+    padding: 0 20px;
+}
+
+
+/* ======================================================= */
+/* 2. تجميل البطاقة البصرية (HeroSub) مع صورة الخلفية (introcardip.jpg) */
+/* ======================================================= */
+
+.HeroSub {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 40px;
+    border-radius: 15px; /* حواف مستديرة للمظهر العصري */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* ظل أنيق لإعطاء عمق بصري */
+    width: 45%; /* يشغل 45% من عرض الشاشة على اللابتوب */
+    min-height: 400px; /* ارتفاع أدنى لتبدو كبطاقة بصرية */
+    justify-content: center;
+    text-align: center;
+    
+    /* استخدام الصورة الأولى كخلفية (introcardip.jpg) */
+    background-image: linear-gradient(rgba(10, 48, 81, 0.7), rgba(10, 48, 81, 0.9)), 
+                      url('assets/assets/assets/assets/imgs/introcardip.jpg'); 
+    /* التراكب اللوني (linear-gradient) يضمن أن النص الأبيض واضح القراءة فوق الصورة */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* التأكد من أن النص أبيض وبارز */
+    color: #fff;
+}
+
+/* تحسينات على العناوين داخل البطاقة */
+.heroSub .name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 5px; /* تباعد الحروف لجعلها أكثر أناقة */
+}
+.heroSub .title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+
+/* ======================================================= */
+/* 4. تحسين أزرار التفاعل (Bonus Tip!) */
+/* ======================================================= */
+
+.HeroBtns {
+    display: flex;
+    justify-content: center; /* توسيط الزر داخل البطاقة */
+    margin-top: 1.5rem;
+}
+
+.hireMe {
+    padding: 12px 30px;
+    background-color: rgb(0, 255, 255); /* استخدام لون سماوي ساطع كنقطة جذب */
+    color: rgb(10, 48, 81); /* لون النص داكن لتباين ممتاز */
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hireMe:hover {
+    background-color: rgb(0, 200, 200); /* لون أغمق قليلاً عند التفاعل */
+}
+
+
+/* ======================================================= */
+/* 5. التجاوب (Media Query) - يبدو جميلاً على الهاتف */
+/* ======================================================= */
+
+@media (max-width: 900px) { /* تطبيق التعديلات على الشاشات الأصغر من 900 بكسل */
+    .hero {
+        flex-direction: column; /* جعل الترتيب عمودي على الموبايل */
+        gap: 2rem;
+        margin: 3rem auto;
+    }
+    
+    /* جعل البطاقة والصورة تأخذ معظم عرض الشاشة لتكون بارزة */
+    .HeroSub {
+        width: 90%; 
+        max-width: 500px; 
+        min-height: 300px; 
+    }
+
+    
+    
+    .heroSub .title {
+        font-size: 2.5rem; /* تقليل حجم الخط الرئيسي ليتناسب مع الهاتف */
+    }
+}
+
+
+
+
+
+/* ======================================================= */
+/* قسم لماذا كاردب */
+/* ======================================================= */
+
+.why-cardip {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.why-cardip-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.why-text {
+    color: rgb(19, 191, 197);               
+    font-weight: 400;
+}
+
+.cardip-text {
+    color: rgb(255, 255, 255); /* اللون الفيروزي من موقعك */
+    font-weight: 700;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, rgba(19, 191, 197, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(19, 191, 197, 0.3);
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(19, 191, 197, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(19, 191, 197, 0.3);
+    border-color: rgb(19, 191, 197);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-icon {
+    color: rgb(19, 191, 197);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.feature-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ======================================================= */
+/* تجاوب مع الموبايل */
+/* ======================================================= */
+
+@media (max-width: 900px) {
+    .why-cardip-title {
+        font-size: 2rem;
+    }
+    
+    .features-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .feature-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .why-cardip {
+        margin: 3rem auto;
+    }
+    
+    .why-cardip-title {
+        font-size: 1.8rem;
+          gap: 10px;
+    }
+
+    .feature-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ======================================================= */
+/* YENİ VE GÜNCELLENMİŞ About Us (Hakkımızda) STİLLERİ */
+/* ======================================================= */
+
+.aboutMe {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; /* Gerekirse ortalama */
+    margin: 5rem auto; 
+    max-width: 1200px; 
+    padding: 0 20px; 
+    gap: 4rem; /* Resim ve metin arasındaki boşluk */
+}
+
+.aboutMeImg {
+    width: 50%; 
+    max-width: 550px;
+    height: auto;
+    border-radius: 15px; /* Şık bir görünüm için yuvarlak köşeler */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Hafif gölge */
+    object-fit: cover;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Başlık ve paragraf arasındaki boşluk */
+    width: 45%; 
+    padding-top: 0; /* Başka yerlerden gelen gereksiz padding'i sıfırlıyoruz */
+}
+
+.textTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.5rem; /* Biraz küçülttük */
+}
+
+.aboutName {
+    color: aliceblue;
+    font-weight: 300;
+}
+
+.aboutTitle{
+    color: rgb(19, 191, 197); /* Koyu firuze rengi */
+    font-weight: 700;
+}
+
+.aboutMePar  {
+    text-align: left; /* Metni sola hizalama */
+    color: rgba(255, 255, 255, 0.85); /* Hafif daha parlak beyaz */
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ======================================================= */
+/* About Us Mobil Uyum (900px altı) */
+/* ======================================================= */
+
+@media (max-width: 900px) {
+    /* Eski aboutMe mobil stilini bulun ve DEĞİŞTİRİN */
+    .aboutMe {
+        flex-direction: column-reverse; 
+        align-items: center;
+        gap: 2rem;
+        margin: 3rem auto;
+    }
+    
+    .aboutMeImg {
+        width: 90%; 
+        max-width: 500px;
+    }
+
+    .textContainer {
+        width: 90%; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutMePar {
+        text-align: center; 
+        padding: 0 10px;
+    }
+
+    .textTitle {
+        font-size: 2rem;
+    }
+}
